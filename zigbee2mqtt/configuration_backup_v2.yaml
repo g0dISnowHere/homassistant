@@ -1,0 +1,71 @@
+homeassistant: true
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: addons
+  password: shah0weid9Soos8chaiPh9shohy0Baehaeh9eewae7aisuoWoh1ooy8ech7ahsie
+serial:
+  port: >-
+    /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2420931-if00
+  adapter: deconz
+frontend:
+  enabled: true
+  port: 8099
+devices:
+  '0xccccccfffe934c59':
+    friendly_name: small ceiling
+    homeassistant: {}
+    optimistic: true
+    qos: 2
+  '0x000b57fffeb9e05b':
+    friendly_name: big ceiling
+  '0xccccccfffea81914':
+    friendly_name: remote control
+    legacy: false
+  '0x00124b00246f6dcb':
+    friendly_name: Office 1
+    homeassistant: {}
+    optimistic: true
+    qos: 2
+  '0x00124b00246f6ded':
+    friendly_name: Office 2
+    homeassistant: {}
+    optimistic: true
+    qos: 2
+  '0xa4c138d187fcf2e1':
+    friendly_name: tuya 1
+advanced:
+  log_level: info
+  log_syslog:
+    app_name: Zigbee2MQTT
+    eol: /n
+    host: localhost
+    localhost: localhost
+    path: /dev/log
+    pid: process.pid
+    port: 514
+    protocol: udp4
+    type: '5424'
+  last_seen: ISO_8601
+  channel: 18
+  transmit_power: 25
+device_options:
+  homeassistant:
+    last_seen:
+      enabled_by_default: true
+availability:
+  active:
+    timeout: 30
+  passive:
+    timeout: 1500
+blocklist:
+  - '0x00178801061c5b29'
+  - '0x00178801061c4cde'
+  - '0x0017880106a3e73f'
+  - '0x00178801061c5b29'
+  - '0x0017880106a3e73f'
+  - '0x00178801061c4cde'
+  - '0xccccccfffe9371db'
+  - '0x000d6ffffe7beb83'
+  - '0x001788010b097113'
+ota: {}
+version: 2

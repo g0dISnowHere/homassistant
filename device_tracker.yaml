@@ -1,0 +1,11 @@
+# https://www.home-assistant.io/integrations/device_tracker/
+- platform: luci
+  host: !secret ROUTER_IP_ADDRESS
+  username: !secret DUSTYNET_USERNAME
+  password: !secret DUSTYNET_PASSWORD
+#  interval_seconds: 10
+#  consider_home: 180
+#  new_device_defaults:
+#    track_new_devices: true
+
+#- platform: bluetooth

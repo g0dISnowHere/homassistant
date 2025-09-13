@@ -1,0 +1,43 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+bluetooth:
+
+# Text to speech
+tts:
+#  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+influxdb: !include influxdb.yaml
+
+homeassistant:
+  packages:
+    pack_1: !include zigbee2mqtt.yaml
+
+sensor: !include sensor.yaml
+
+mqtt: !include mqtt.yaml
+
+# for addon integration
+powercalc:
+
+http: !include http.yaml
+
+#almond: !include almond.yaml
+
+#breaking_changes:
+
+#telegram: !include telegram.yaml
+
+device_tracker: !include device_tracker.yaml
+
+cover: !include cover.yaml
+
+wake_on_lan: 
+# https://www.home-assistant.io/integrations/wake_on_lan/
+# contains PCs to be switched on/off
+switch: !include switch.yaml

@@ -1,0 +1,5187 @@
+- id: '1626591875148'
+  name: daytime
+  entities:
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.mainlightswitch:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: MainLightSwitch
+      supported_features: 0
+      state: 'on'
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      last_seen: '2024-09-21T08:25:22.325Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'off'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: small ceiling
+      supported_features: 44
+      state: unavailable
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.3131
+        y: 0.3232
+      last_seen: '2024-09-21T08:21:08.081Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 6993
+      color_temp: 143
+      hs_color:
+      - 242.702
+      - 4.994
+      rgb_color:
+      - 242
+      - 242
+      - 255
+      xy_color:
+      - 0.314
+      - 0.315
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      do_not_disturb:
+      last_seen: '2024-09-21T08:25:16.545Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'on'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      color_mode: color_temp
+      color_temp: 143
+      do_not_disturb:
+      last_seen: '2024-09-21T08:25:16.545Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 6535
+      color_temp: 153
+      hs_color:
+      - 54.768
+      - 1.6
+      rgb_color:
+      - 255
+      - 254
+      - 250
+      xy_color:
+      - 0.326
+      - 0.333
+      color:
+        x: 0.3131
+        y: 0.3232
+      last_seen: '2024-09-21T08:24:57.048Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'on'
+  metadata: {}
+- id: '1626591901184'
+  name: evening
+  entities:
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      last_seen: '2024-09-30T18:01:30.241Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'off'
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4015
+        y: 0.3888
+      last_seen: '2024-09-30T17:49:49.834Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 35
+        hue: 35
+        s: 74
+        saturation: 74
+      do_not_disturb:
+      last_seen: '2024-09-30T18:01:30.261Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 35
+        hue: 35
+        s: 74
+        saturation: 74
+      color_mode: color_temp
+      color_temp: 329
+      do_not_disturb:
+      last_seen: '2024-09-30T18:01:30.261Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 82
+      color_temp_kelvin: 2702
+      color_temp: 370
+      hs_color:
+      - 28.391
+      - 65.659
+      rgb_color:
+      - 255
+      - 166
+      - 87
+      xy_color:
+      - 0.526
+      - 0.387
+      color:
+        x: 0.4599
+        y: 0.4106
+      last_seen: '2024-09-30T18:01:30.375Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'on'
+  metadata: {}
+  icon: mdi:weather-sunset-down
+- id: '1626591918334'
+  name: reading
+  entities:
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    switch.nightlight_nightlight:
+      restored: true
+      friendly_name: Nightlight
+      supported_features: 0
+      state: unavailable
+    switch.nightlight_sync_send:
+      restored: true
+      friendly_name: Sync send
+      supported_features: 0
+      state: unavailable
+    switch.nightlight_sync_receive:
+      restored: true
+      friendly_name: Sync receive
+      supported_features: 0
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    switch.adalight_nightlight:
+      restored: true
+      friendly_name: Nightlight
+      supported_features: 0
+      state: unavailable
+    switch.adalight_sync_send:
+      restored: true
+      friendly_name: Sync send
+      supported_features: 0
+      state: unavailable
+    switch.adalight_sync_receive:
+      restored: true
+      friendly_name: Sync receive
+      supported_features: 0
+      state: unavailable
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.mainlightswitch:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: MainLightSwitch
+      supported_features: 0
+      state: 'on'
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      last_seen: '2024-09-21T08:25:22.325Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'off'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: small ceiling
+      supported_features: 44
+      state: unavailable
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4599
+        y: 0.4106
+      last_seen: '2024-09-21T08:27:07.634Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      do_not_disturb:
+      last_seen: '2024-09-21T08:29:01.861Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      color_mode: color_temp
+      color_temp: 143
+      do_not_disturb:
+      last_seen: '2024-09-21T08:29:01.861Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.3131
+        y: 0.3232
+      last_seen: '2024-09-21T08:29:04.283Z'
+      linkquality: 252
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'off'
+  metadata: {}
+  icon: mdi:book-open-outline
+- id: '1626592094444'
+  name: everything off
+  entities:
+    switch.adalight_nightlight:
+      restored: true
+      friendly_name: Nightlight
+      supported_features: 0
+      state: unavailable
+    switch.adalight_sync_send:
+      restored: true
+      friendly_name: Sync send
+      supported_features: 0
+      state: unavailable
+    switch.adalight_sync_receive:
+      restored: true
+      friendly_name: Sync receive
+      supported_features: 0
+      state: unavailable
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    switch.nightlight_nightlight:
+      restored: true
+      friendly_name: Nightlight
+      supported_features: 0
+      state: unavailable
+    switch.nightlight_sync_send:
+      restored: true
+      friendly_name: Sync send
+      supported_features: 0
+      state: unavailable
+    switch.nightlight_sync_receive:
+      restored: true
+      friendly_name: Sync receive
+      supported_features: 0
+      state: unavailable
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      last_seen: '2024-09-21T08:25:22.325Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'off'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: small ceiling
+      supported_features: 44
+      state: unavailable
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.mainlightswitch:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: MainLightSwitch
+      supported_features: 0
+      state: 'on'
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4599
+        y: 0.4106
+      last_seen: '2024-09-21T08:27:07.634Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      do_not_disturb:
+      last_seen: '2024-09-21T08:29:47.589Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      color_mode: color_temp
+      color_temp: 143
+      do_not_disturb:
+      last_seen: '2024-09-21T08:29:47.589Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.3131
+        y: 0.3232
+      last_seen: '2024-09-21T08:29:49.713Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'off'
+  metadata:
+    light.mainlightswitch:
+      entity_only: true
+  icon: mdi:lightbulb-group-off-outline
+- id: '1626592589600'
+  name: just a little light
+  entities:
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4015
+        y: 0.3888
+      last_seen: '2024-09-30T17:49:49.834Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 34
+        hue: 34
+        s: 74
+        saturation: 74
+      do_not_disturb:
+      last_seen: '2024-09-30T18:02:32.417Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 34
+        hue: 34
+        s: 74
+        saturation: 74
+      color_mode: color_temp
+      color_temp: 330
+      do_not_disturb:
+      last_seen: '2024-09-30T18:02:32.417Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4348
+        y: 0.4033
+      last_seen: '2024-09-30T18:02:32.427Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'off'
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 122
+      last_seen: '2024-09-30T18:02:33.085Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'on'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4341
+        y: 0.4031
+      color_options:
+      last_seen: '2024-09-30T18:02:16.434Z'
+      level_config:
+        on_level: previous
+        on_off_transition_time: 5
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587814449
+        latest_version: 537040419
+        state: idle
+      update_available: false
+      friendly_name: small ceiling
+      supported_features: 44
+      state: 'off'
+  metadata: {}
+  icon: mdi:sun-angle-outline
+- id: '1646389849506'
+  name: 'Living space '
+  entities:
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      last_seen: '2024-09-30T17:57:38.738Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'off'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.424
+        y: 0.3992
+      color_options:
+      last_seen: '2024-09-30T17:59:42.230Z'
+      level_config:
+        on_level: previous
+        on_off_transition_time: 5
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587814449
+        latest_version: 537040419
+        state: idle
+      update_available: false
+      friendly_name: small ceiling
+      supported_features: 44
+      state: 'off'
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4015
+        y: 0.3888
+      last_seen: '2024-09-30T17:49:49.834Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 3144
+      color_temp: 318
+      hs_color:
+      - 27.604
+      - 53.118
+      rgb_color:
+      - 255
+      - 181
+      - 119
+      xy_color:
+      - 0.484
+      - 0.38
+      color:
+        h: 35
+        hue: 35
+        s: 72
+        saturation: 72
+      do_not_disturb:
+      last_seen: '2024-09-30T17:58:26.970Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'on'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 35
+        hue: 35
+        s: 72
+        saturation: 72
+      color_mode: color_temp
+      color_temp: 318
+      do_not_disturb:
+      last_seen: '2024-09-30T17:58:26.970Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 3164
+      color_temp: 316
+      hs_color:
+      - 27.575
+      - 52.614
+      rgb_color:
+      - 255
+      - 182
+      - 120
+      xy_color:
+      - 0.482
+      - 0.38
+      color:
+        x: 0.426
+        y: 0.4
+      last_seen: '2024-09-30T17:58:39.246Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'on'
+  metadata: {}
+  icon: mdi:sofa-outline
+- id: '1646390012126'
+  name: office
+  entities:
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 255
+      last_seen: '2024-09-21T08:32:46.180Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'on'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      friendly_name: small ceiling
+      supported_features: 44
+      state: unavailable
+    light.mainlightswitch:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: MainLightSwitch
+      supported_features: 0
+      state: 'on'
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4599
+        y: 0.4106
+      last_seen: '2024-09-21T08:27:07.634Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      do_not_disturb:
+      last_seen: '2024-09-21T08:33:00.973Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 218
+        hue: 218
+        s: 17
+        saturation: 17
+      color_mode: color_temp
+      color_temp: 143
+      do_not_disturb:
+      last_seen: '2024-09-21T08:33:00.973Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.3131
+        y: 0.3232
+      last_seen: '2024-09-21T08:31:41.928Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'off'
+  metadata:
+    light.mainlightswitch:
+      entity_only: true
+  icon: mdi:chair-rolling
+- id: '1646402051798'
+  name: 'Indirect light '
+  entities:
+    light.adalight:
+      restored: true
+      effect_list:
+      - Akemi
+      - Android
+      - Aurora
+      - Black Hole
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Blobs
+      - Blurz
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colored Bursts
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Crazy Bees
+      - DJ Light
+      - DNA
+      - DNA Spiral
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Distortion Waves
+      - Drift
+      - Drift Rose
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Firenoise
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Flow Stripe
+      - Freqmap
+      - Freqmatrix
+      - Freqpixels
+      - Freqwave
+      - Frizzles
+      - Funky Plank
+      - GEQ
+      - Game Of Life
+      - Ghost Rider
+      - Glitter
+      - Gradient
+      - Gravcenter
+      - Gravcentric
+      - Gravfreq
+      - Gravimeter
+      - Halloween Eyes
+      - Heartbeat
+      - Hiphotic
+      - ICU
+      - Juggle
+      - Juggles
+      - Julia
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Lissajous
+      - Loading
+      - Matripix
+      - Matrix
+      - Metaballs
+      - Meteor
+      - Meteor Smooth
+      - Midnoise
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Noise2D
+      - Noisefire
+      - Noisemeter
+      - Noisemove
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Perlin Move
+      - Phased
+      - Phased Noise
+      - Pixels
+      - Pixelwave
+      - Plasma
+      - Plasma Ball
+      - Plasmoid
+      - Polar Lights
+      - Popcorn
+      - Pride 2015
+      - Puddlepeak
+      - Puddles
+      - Pulser
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - RSVD
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Peak
+      - Ripple Rainbow
+      - Rocktaves
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Scrolling Text
+      - Sindots
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Spaceships
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Squared Swirl
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sun Radiation
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - Swirl
+      - TV Simulator
+      - Tartan
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Waterfall
+      - Waverly
+      - Wavesins
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgb
+      supported_features: 36
+      state: unavailable
+    select.adalight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.adalight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.nightlight_segment_0:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      supported_features: 36
+      state: unavailable
+    light.nightlight_segment_1:
+      restored: true
+      effect_list:
+      - Android
+      - Aurora
+      - Blends
+      - Blink
+      - Blink Rainbow
+      - Bouncing Balls
+      - Bpm
+      - Breathe
+      - Candle
+      - Candle Multi
+      - Candy Cane
+      - Chase
+      - Chase 2
+      - Chase 3
+      - Chase Flash
+      - Chase Flash Rnd
+      - Chase Rainbow
+      - Chase Random
+      - Chunchun
+      - Colorful
+      - Colorloop
+      - Colortwinkles
+      - Colorwaves
+      - Dancing Shadows
+      - Dissolve
+      - Dissolve Rnd
+      - Drip
+      - Dynamic
+      - Dynamic Smooth
+      - Fade
+      - Fairy
+      - Fairytwinkle
+      - Fill Noise
+      - Fire 2012
+      - Fire Flicker
+      - Fireworks
+      - Fireworks 1D
+      - Fireworks Starburst
+      - Flow
+      - Glitter
+      - Gradient
+      - Halloween
+      - Halloween Eyes
+      - Heartbeat
+      - ICU
+      - Juggle
+      - Lake
+      - Lighthouse
+      - Lightning
+      - Loading
+      - Meteor
+      - Meteor Smooth
+      - Multi Comet
+      - Noise 1
+      - Noise 2
+      - Noise 3
+      - Noise 4
+      - Noise Pal
+      - Oscillate
+      - Pacifica
+      - Palette
+      - Percent
+      - Phased
+      - Phased Noise
+      - Plasma
+      - Police
+      - Popcorn
+      - Pride 2015
+      - Railway
+      - Rain
+      - Rainbow
+      - Rainbow Runner
+      - Random Colors
+      - Ripple
+      - Ripple Rainbow
+      - Running
+      - Running Dual
+      - Saw
+      - Scan
+      - Scan Dual
+      - Scanner
+      - Scanner Dual
+      - Sine
+      - Sinelon
+      - Sinelon Dual
+      - Sinelon Rainbow
+      - Solid
+      - Solid Glitter
+      - Solid Pattern
+      - Solid Pattern Tri
+      - Sparkle
+      - Sparkle Dark
+      - Sparkle+
+      - Spots
+      - Spots Fade
+      - Stream
+      - Stream 2
+      - Strobe
+      - Strobe Mega
+      - Strobe Rainbow
+      - Sunrise
+      - Sweep
+      - Sweep Random
+      - TV Simulator
+      - Tetrix
+      - Theater
+      - Theater Rainbow
+      - Traffic Light
+      - Tri Fade
+      - Tri Wipe
+      - Twinkle
+      - Twinklecat
+      - Twinklefox
+      - Twinkleup
+      - Two Dots
+      - Washing Machine
+      - Wipe
+      - Wipe Random
+      supported_color_modes:
+      - rgbw
+      friendly_name: Segment 1
+      supported_features: 36
+      state: unavailable
+    light.nightlight_master:
+      restored: true
+      supported_color_modes:
+      - brightness
+      friendly_name: Nightlight Master
+      supported_features: 32
+      state: unavailable
+    select.nightlight_preset:
+      restored: true
+      options:
+      - Daytime
+      - Evening
+      - MorningLight
+      - 'Off'
+      - Reading
+      - WakeupLight
+      friendly_name: Preset
+      supported_features: 0
+      state: unavailable
+    select.nightlight_playlist:
+      restored: true
+      options: []
+      friendly_name: Playlist
+      supported_features: 0
+      state: unavailable
+    light.mainlightswitch:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: MainLightSwitch
+      supported_features: 0
+      state: 'on'
+    light.small_ceiling:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      effect:
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 3048
+      color_temp: 328
+      hs_color:
+      - 27.748
+      - 55.607
+      rgb_color:
+      - 255
+      - 178
+      - 113
+      xy_color:
+      - 0.492
+      - 0.382
+      color:
+        x: 0.4341
+        y: 0.4031
+      color_options:
+      last_seen: '2024-09-30T18:02:09.441Z'
+      level_config:
+        on_level: previous
+        on_off_transition_time: 5
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587814449
+        latest_version: 537040419
+        state: idle
+      update_available: false
+      friendly_name: small ceiling
+      supported_features: 44
+      state: 'on'
+    light.big_ceiling:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode: brightness
+      brightness: 255
+      last_seen: '2024-09-30T18:02:06.853Z'
+      linkquality: 255
+      power_on_behavior:
+      update:
+        installed_version: 587810353
+        latest_version: 587347505
+        state: idle
+      update_available: false
+      friendly_name: big ceiling
+      supported_features: 44
+      state: 'on'
+    light.light_ceiling_towards_bed:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4015
+        y: 0.3888
+      last_seen: '2024-09-30T17:49:49.834Z'
+      linkquality: 255
+      friendly_name: light ceiling towards bed
+      supported_features: 40
+      state: 'off'
+    light.light_ceiling_towards_couch:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6993
+      min_mireds: 143
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        h: 35
+        hue: 35
+        s: 74
+        saturation: 74
+      do_not_disturb:
+      last_seen: '2024-09-30T18:02:04.667Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch
+      supported_features: 40
+      state: 'off'
+    switch.light_ceiling_towards_couch_do_not_disturb:
+      brightness: 254
+      color:
+        h: 35
+        hue: 35
+        s: 74
+        saturation: 74
+      color_mode: color_temp
+      color_temp: 328
+      do_not_disturb:
+      last_seen: '2024-09-30T18:02:04.667Z'
+      linkquality: 255
+      friendly_name: light ceiling towards couch Do not disturb
+      state: 'off'
+    light.light_ceiling_towards_windows:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      color:
+        x: 0.4341
+        y: 0.4031
+      last_seen: '2024-09-30T18:02:04.656Z'
+      linkquality: 255
+      friendly_name: light ceiling towards windows
+      supported_features: 40
+      state: 'off'
+  metadata: {}
+- id: '1646402166865'
+  name: Shade 100%
+  entities:
+    cover.windows_cover_1:
+      current_position: 100
+      friendly_name: Windows cover 1
+      supported_features: 15
+      state: open
+    cover.windows_cover_2:
+      current_position: 100
+      friendly_name: Windows cover 2
+      supported_features: 15
+      state: open
+  metadata:
+    cover.windows_cover_1:
+      entity_only: false
+    cover.windows_cover_2:
+      entity_only: false
+- id: '1646402255232'
+  name: Shade 40%
+  entities:
+    cover.windows_cover_1:
+      current_position: 39
+      friendly_name: Windows cover 1
+      supported_features: 15
+      state: open
+    cover.windows_cover_2:
+      current_position: 39
+      friendly_name: Windows cover 2
+      supported_features: 15
+      state: open
+- id: '1651936878318'
+  name: schade 50%
+  entities:
+    cover.windows_cover_1:
+      current_position: 50
+      friendly_name: Windows cover 1
+      supported_features: 15
+      state: open
+    cover.windows_cover_2:
+      current_position: 51
+      friendly_name: Windows cover 2
+      supported_features: 15
+      state: open

@@ -1,0 +1,6 @@
+    - platform: group
+      name: all covers
+      unique_id: b3506a20-480b-4681-9d03-17baa6086906
+      entities:
+        - cover.windows_cover_1
+        - cover.windows_cover_2

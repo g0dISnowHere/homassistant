@@ -1,0 +1,34 @@
+title: Hass
+
+exceptions:
+  - user: julz
+    base_order: true
+    order:
+      - item: logbook
+        hide: true
+      - item: developer tools
+        hide: true
+      - item: history
+        hide: true
+      - item: adguard
+        hide: true
+      - item: file editor
+        hide: true
+      - item: hacs
+        hide: true
+      - item: influxDB
+        hide: true
+      - item: Node-RED
+        hide: true
+      - item: TasmoAdmin
+        hide: true
+      - item: Terminal
+        hide: true
+      - item: phpMyAdmin
+        hide: true
+      - item: Supervisor
+        hide: true
+      - item: configuration
+        hide: true
+
+    

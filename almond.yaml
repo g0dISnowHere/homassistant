@@ -1,0 +1,8 @@
+# Example local configuration.yaml entry
+  type: local
+  host: http://127.0.0.1:3000
+  
+# Example web configuration.yaml entry
+#  type: oauth2
+#  client_id: AAAAAAAAAAAAA
+#  client_secret: BBBBBBBBBBBBBBBBB

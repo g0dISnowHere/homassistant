@@ -1,0 +1,1089 @@
+- id: '1625663952586'
+  alias: any light switches it's state to on
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 51467b358dad8af0586cc55ba6597f2f
+    entity_id: light.nightlight_master
+    domain: light
+  - platform: device
+    type: turned_on
+    device_id: 1d642ece31d1b5bab9809847bfd0eab9
+    entity_id: light.adalight
+    domain: light
+  - platform: device
+    type: turned_on
+    device_id: 0c46baf80a1b6c63cc65786f55d555ce
+    entity_id: light.mainlightswitch
+    domain: light
+    enabled: false
+  - platform: device
+    type: turned_on
+    device_id: 2512feeda81049992778184af8ab0de4
+    entity_id: 99dd4cd935595f3507f6d4b575999aca
+    domain: light
+  - platform: device
+    type: turned_on
+    device_id: d981a46e9da323ae35f83d56c191d9a9
+    entity_id: cbca092c649fcdadb20f8f88ab1a0cbb
+    domain: light
+  - platform: device
+    type: turned_on
+    device_id: 6b3464aac03070ec08f22b79e61e0de0
+    entity_id: ccb8da50b3e9437e78a270cc96c31a77
+    domain: light
+  - platform: device
+    type: turned_on
+    device_id: e02c713ed191cbc9d7379043234bda97
+    entity_id: 7e113eb694a813b7fe70bd661877b5d8
+    domain: light
+  condition: []
+  action:
+  - target:
+      entity_id: input_boolean.lights_state
+    data: {}
+    action: input_boolean.turn_on
+  mode: single
+- id: '1625664038910'
+  alias: any light switches it's state to off
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 51467b358dad8af0586cc55ba6597f2f
+    entity_id: light.nightlight_segment_0
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: 1d642ece31d1b5bab9809847bfd0eab9
+    entity_id: light.adalight
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: 0c46baf80a1b6c63cc65786f55d555ce
+    entity_id: light.mainlightswitch
+    domain: light
+    enabled: false
+  - platform: device
+    type: turned_off
+    device_id: 2512feeda81049992778184af8ab0de4
+    entity_id: 99dd4cd935595f3507f6d4b575999aca
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: 6b3464aac03070ec08f22b79e61e0de0
+    entity_id: ccb8da50b3e9437e78a270cc96c31a77
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: e02c713ed191cbc9d7379043234bda97
+    entity_id: 7e113eb694a813b7fe70bd661877b5d8
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: 51467b358dad8af0586cc55ba6597f2f
+    entity_id: light.nightlight_segment_1
+    domain: light
+  - platform: device
+    type: turned_off
+    device_id: d981a46e9da323ae35f83d56c191d9a9
+    entity_id: cbca092c649fcdadb20f8f88ab1a0cbb
+    domain: light
+  condition:
+  - condition: device
+    type: is_off
+    device_id: 0c46baf80a1b6c63cc65786f55d555ce
+    entity_id: light.mainlightswitch
+    domain: light
+    enabled: false
+  - condition: device
+    type: is_off
+    device_id: 51467b358dad8af0586cc55ba6597f2f
+    entity_id: light.nightlight_segment_0
+    domain: light
+    enabled: false
+  - condition: device
+    type: is_off
+    device_id: 1d642ece31d1b5bab9809847bfd0eab9
+    entity_id: light.adalight
+    domain: light
+  - condition: device
+    type: is_off
+    device_id: 2512feeda81049992778184af8ab0de4
+    entity_id: 99dd4cd935595f3507f6d4b575999aca
+    domain: light
+  - condition: device
+    type: is_off
+    device_id: d981a46e9da323ae35f83d56c191d9a9
+    entity_id: cbca092c649fcdadb20f8f88ab1a0cbb
+    domain: light
+  - condition: device
+    type: is_off
+    device_id: 6b3464aac03070ec08f22b79e61e0de0
+    entity_id: ccb8da50b3e9437e78a270cc96c31a77
+    domain: light
+  - condition: device
+    type: is_off
+    device_id: 51467b358dad8af0586cc55ba6597f2f
+    entity_id: light.nightlight_segment_1
+    domain: light
+    enabled: false
+  - condition: device
+    type: is_off
+    device_id: e02c713ed191cbc9d7379043234bda97
+    entity_id: 7e113eb694a813b7fe70bd661877b5d8
+    domain: light
+  action:
+  - target:
+      entity_id: input_boolean.lights_state
+    data: {}
+    action: input_boolean.turn_off
+  mode: single
+- id: '1625664098998'
+  alias: disable main light at night
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 0c46baf80a1b6c63cc65786f55d555ce
+    entity_id: light.mainlightswitch
+    domain: light
+  mode: single
+- id: '1625664124530'
+  alias: enable main light in the morning
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:00:00
+  condition: []
+  action: []
+  mode: single
+- id: '1625664147986'
+  alias: buttons that switch the state of input_boolean.light_trigger
+  description: ''
+  triggers:
+  - entity_id: binary_sensor.mainlightswitch_input
+    from: 'on'
+    to: 'off'
+    trigger: state
+  - entity_id: binary_sensor.mainlightswitch_input
+    from: 'off'
+    to: 'on'
+    trigger: state
+  - domain: mqtt
+    device_id: 8ea211c32f7acb4a286c994c476bb8aa
+    type: action
+    subtype: toggle
+    discovery_id: 0xccccccfffea81914 action_toggle
+    trigger: device
+    enabled: false
+  conditions: []
+  actions:
+  - target:
+      entity_id: input_boolean.lighttrigger
+    data: {}
+    action: input_boolean.toggle
+  mode: queued
+  max: 10
+- id: '1627743597585'
+  alias: Perform Auto Backup
+  description: ''
+  trigger:
+  - platform: time_pattern
+    hours: /3
+  action:
+  - service: auto_backup.backup_partial
+    data:
+      name: 'AutoBackup: {{ now().strftime(''%a, %-I:%M %p (%d/%m/%Y)'') }}'
+      addons: []
+      folders:
+      - homeassistant
+      - share
+      - ssl
+      keep_days: 0.5
+  mode: single
+- id: '1627743920236'
+  alias: Perform Daily Backup
+  description: ''
+  triggers:
+  - at: '10:30:00'
+    trigger: time
+  conditions:
+  - condition: time
+    weekday:
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+  actions:
+  - data:
+      name: 'ConfigBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
+      keep_days: 7
+      include_folders:
+      - config
+      - homeassistant
+    action: auto_backup.backup
+  mode: single
+- id: '1627744323260'
+  alias: Perform Weekly Backup
+  description: ''
+  trigger:
+  - platform: time
+    at: '10:30:00'
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    before: 00:00:00
+    after: 00:00:00
+  action:
+  - service: auto_backup.backup_full
+    data:
+      name: 'WeeklyBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
+      keep_days: 28
+  mode: single
+- id: '1647286176371'
+  alias: ' turn on lights night before holiday'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: binary_sensor.day_before_holiday
+          state: 'on'
+        - condition: time
+          before: input_datetime.holiday_morning
+          after: input_datetime.holiday_evening
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+          - sat
+          - sun
+      sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.indirect_light
+        metadata: {}
+    default:
+    - service: scene.turn_on
+      metadata: {}
+      target:
+        entity_id: scene.indirect_light
+  mode: single
+- id: '1647293731426'
+  alias: ' turn off lights'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.dark
+    metadata: {}
+    enabled: false
+  - service: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      area_id:
+      - kitchen
+      - living_room
+      - bedroom
+  mode: single
+- id: '1651933430837'
+  alias: decrease light brightness
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 8ea211c32f7acb4a286c994c476bb8aa
+    type: action
+    subtype: brightness_down_click
+    discovery_id: 0xccccccfffea81914 action_brightness_down_click
+  condition:
+  - condition: state
+    state: 'on'
+    entity_id: input_boolean.lights_state
+  action:
+  - parallel:
+    - service: script.decrease_brigthness
+      data: {}
+  mode: single
+- id: '1651933771533'
+  alias: dimmer switch scene right
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 92a5cccf7977da7a6508631815c1fd5e
+    type: action
+    subtype: rotate_right_quick
+    discovery_id: 0x000d6ffffe7beb83 action_rotate_right_quick
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.office
+    metadata: {}
+  mode: single
+- id: '1651933807876'
+  alias: dimmer switch scene left
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 92a5cccf7977da7a6508631815c1fd5e
+    type: action
+    subtype: rotate_left_quick
+    discovery_id: 0x000d6ffffe7beb83 action_rotate_left_quick
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.living_space
+    metadata: {}
+  mode: single
+- id: '1656337705776'
+  alias: remote blinds 100%
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.shade_40
+    metadata: {}
+  mode: single
+- id: '1656337723771'
+  alias: remote blinds 40%
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.shade_40_2
+    metadata: {}
+  mode: single
+- id: '1661276166014'
+  alias: increase light brightness
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 8ea211c32f7acb4a286c994c476bb8aa
+    type: action
+    subtype: brightness_up_click
+    discovery_id: 0xccccccfffea81914 action_brightness_up_click
+  condition:
+  - condition: state
+    entity_id: input_boolean.lights_state
+    state: 'on'
+  action:
+  - parallel:
+    - service: script.increase_brightness
+      data: {}
+  mode: single
+- id: '1663541586587'
+  alias: Turn on lights holiday daytime
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: state
+          state: 'on'
+          entity_id: binary_sensor.holiday
+        - condition: time
+          weekday:
+          - sun
+          - sat
+          - fri
+          - thu
+          - wed
+          - tue
+          - mon
+          after: input_datetime.holiday_morning
+          before: input_datetime.holiday_evening
+      sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.living_space
+        metadata: {}
+    default:
+    - service: scene.turn_on
+      metadata: {}
+      target:
+        entity_id: scene.indirect_light
+  mode: single
+- id: '1663541681478'
+  alias: Tun on lights workday daytime
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: state
+          state: 'on'
+          entity_id: binary_sensor.workday
+        - condition: time
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+          - sat
+          - sun
+          before: input_datetime.workday_evening
+          after: input_datetime.workday_morning
+      sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.office
+        metadata: {}
+    default:
+    - service: scene.turn_on
+      metadata: {}
+      target:
+        entity_id: scene.indirect_light
+  mode: single
+- id: '1663541844333'
+  alias: Turn on lights evening before workday
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: state
+          state: 'on'
+          entity_id: binary_sensor.day_before_workday
+        - condition: time
+          before: input_datetime.workday_morning
+          weekday:
+          - sun
+          - sat
+          - fri
+          - thu
+          - wed
+          - tue
+          - mon
+          after: input_datetime.workday_evening
+      sequence:
+      - service: scene.turn_on
+        target:
+          entity_id: scene.indirect_light
+        metadata: {}
+  mode: single
+- id: '1663542567559'
+  alias: Wake up workday morning
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.workday_morning
+  condition:
+  - condition: state
+    entity_id: binary_sensor.workday
+    state: 'on'
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: input_boolean.alarm
+      state: 'on'
+  action:
+  - service: script.wake_up_sequence
+    data: {}
+  mode: single
+- id: '1663542623049'
+  alias: Wake up holiday morning
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.holiday_morning
+  condition:
+  - condition: state
+    state: 'on'
+    entity_id: binary_sensor.holiday
+  - condition: state
+    entity_id: input_boolean.alarm
+    state: 'on'
+  action:
+  - service: script.wake_up_sequence
+    data: {}
+  mode: single
+- id: '1666445640899'
+  alias: Perform Weekly Backup
+  description: ''
+  trigger:
+  - platform: time
+    at: '10:30:00'
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    before: 00:00:00
+    after: 00:00:00
+  action:
+  - service: auto_backup.backup_full
+    data:
+      name: 'WeeklyBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
+      keep_days: 28
+  mode: single
+- id: '1667128626174'
+  alias: buttons that turn on indirect light
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.indirect_light
+    metadata: {}
+  mode: single
+- id: '1669480875120'
+  alias: Turn on the light beside the PC if it is turned on
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.windows
+    to: 'on'
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: input_boolean.lighttrigger
+      state: 'on'
+      enabled: false
+  action:
+  - type: turn_on
+    device_id: e02c713ed191cbc9d7379043234bda97
+    entity_id: 7e113eb694a813b7fe70bd661877b5d8
+    domain: light
+  mode: single
+- id: '1670074346014'
+  alias: ZigBee2Mqtt - Ikea E1810 Tradfri Remote Control
+  description: ''
+  use_blueprint:
+    path: Nsbx/zigbee2mqtt-ikea-e1810-tradfri-remote-control.yaml
+    input:
+      action_sensor: sensor.remote_control_action
+      toggle_action:
+      - data: {}
+        target:
+          entity_id: input_boolean.lighttrigger
+        enabled: true
+        action: input_boolean.toggle
+      brightness_up_action:
+      - action: automation.trigger
+        metadata: {}
+        data:
+          skip_condition: true
+        target:
+          entity_id: automation.increase_light_brightness_2
+      brightness_down_action:
+      - action: automation.trigger
+        metadata: {}
+        data:
+          skip_condition: true
+        target:
+          entity_id: automation.decrease_light_brightness
+- id: '1670088126321'
+  alias: Update notifications
+  description: ''
+  use_blueprint:
+    path: mdegat01/update_notifications.yaml
+    input:
+      reminder_hours: '3'
+      update_entities:
+      - update.home_assistant_supervisor_update
+      - update.home_assistant_core_update
+      mobile_app_device: af2048b248f7edd041ad6d887cf73f6a
+      run_config_check: true
+      only_after: 09:00:00
+      only_before: '22:00:00'
+      send_to_ha: true
+      mobile_app_device_2: af2048b248f7edd041ad6d887cf73f6a
+- id: '1670623198895'
+  alias: Turn off adalight if PC turns off
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.windows
+    to: 'off'
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: input_boolean.lights_state
+      state: 'on'
+    enabled: false
+  action:
+  - service: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id:
+      - e02c713ed191cbc9d7379043234bda97
+      - 1d642ece31d1b5bab9809847bfd0eab9
+  mode: single
+- id: '1694430028040'
+  alias: Automatic wakup
+  description: triggered by next alarm of phone
+  trigger:
+  - platform: time
+    at: sensor.oneplus_a3003_next_alarm
+  condition:
+  - condition: state
+    entity_id: input_boolean.automatic_alarm
+    state: 'on'
+  - condition: and
+    conditions:
+    - condition: time
+      after: 04:00:00
+      before: '10:00:00'
+  action:
+  - service: script.wake_up_sequence
+    data: {}
+  mode: single
+- id: '1694430536684'
+  alias: Low battery level detection & notification for all battery sensors
+  description: ''
+  use_blueprint:
+    path: sbyx/low-battery-level-detection-notification-for-all-battery-sensors.yaml
+    input:
+      exclude:
+        entity_id: []
+        device_id: af2048b248f7edd041ad6d887cf73f6a
+      actions:
+      - service: notify.mobile_app_p4a
+        data:
+          message: battery low for {{sensors}}
+- id: '1698942747694'
+  alias: 'Warn that fridge has a high power consumption '
+  description: 'Warn if the power used by the fridge is higher than a set amount for
+    more than 5 minutes. '
+  triggers:
+  - entity_id:
+    - sensor.emon_1_power
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    above: 80
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - data:
+      message: High fridge power consumption!
+      title: ' ⚠️ Warning!'
+    action: notify.notify
+    enabled: true
+  - repeat:
+      count: 100
+      sequence:
+      - condition: numeric_state
+        entity_id: sensor.emon_1_power
+        above: 80
+      - data:
+          message: The fridge is open!
+          title: Warning!
+        action: notify.notify
+      - delay:
+          hours: 0
+          minutes: 10
+          seconds: 0
+          milliseconds: 0
+  mode: single
+- id: '1698942783818'
+  alias: Warn that bathroom humidity is high
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.bathroom_humidity
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    above: 70
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Bathroom humidity is high
+  mode: single
+- id: '1699101737413'
+  alias: Warn when hallway humidity is high
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.hallway_humidity
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    above: 70
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Hallway humidity is high
+  mode: single
+- id: '1699101926750'
+  alias: Warn when kitchen humidity is high
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.kitchen_humidity
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    above: 70
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Kitchen humidity is high
+  mode: single
+- id: '1699102075094'
+  alias: Warn when kitchen temperature is low
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.kitchen_temperature
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    below: 15
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - data:
+      message: Kitchen temperature is low
+    action: notify.notify
+  mode: single
+- id: '1699102137362'
+  alias: Warn when bathroom temperature is low
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.bathroom_temperature
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+    below: 14
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Bathroom temperature is low
+  mode: single
+- id: '1699102168666'
+  alias: Warn when hallway temperature is low
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id:
+    - sensor.hallway_temperature
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    below: 15
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Bathroom temperature is low
+  mode: single
+- id: '1700398781315'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.lighttrigger
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.dark
+    metadata: {}
+  mode: single
+- id: '1711317643768'
+  alias: 'Sunrise with RGB Lightbulb '
+  description: ''
+  use_blueprint:
+    path: sbyx/wake-up-light-alarm-with-sunrise-effect.yaml
+    input:
+      manual_time: 06:00:00
+      light_entity: light.light_ceiling_towards_bed
+      check_entity: binary_sensor.workday
+      post_sunrise_actions:
+      - repeat:
+          sequence:
+          - target:
+              device_id:
+              - 6b3464aac03070ec08f22b79e61e0de0
+            data: {}
+            action: light.turn_off
+          - delay:
+              hours: 0
+              minutes: 0
+              seconds: 2
+              milliseconds: 0
+          - target:
+              device_id:
+              - 6b3464aac03070ec08f22b79e61e0de0
+            data: {}
+            action: light.turn_on
+          - delay:
+              hours: 0
+              minutes: 0
+              seconds: 2
+              milliseconds: 0
+          until:
+          - condition: state
+            entity_id: input_boolean.lighttrigger
+            state: 'on'
+      min_mired: 25
+      sunrise_duration: 15
+- id: '1712091874701'
+  alias: 'Adaptive lighting: reset manual_control after 1 hour'
+  trigger:
+    platform: event
+    event_type: adaptive_lighting.manual_control
+  action:
+  - delay: 01:00:00
+  - condition: template
+    value_template: '{{ light in state_attr(switch, ''manual_control'') }}'
+  - service: adaptive_lighting.set_manual_control
+    data:
+      entity_id: '{{ switch }}'
+      lights: '{{ light }}'
+      manual_control: false
+  mode: parallel
+  variables:
+    light: '{{ trigger.event.data.entity_id }}'
+    switch: '{{ trigger.event.data.switch }}'
+- id: '1727205962723'
+  alias: Zigbee2MQTT Log Level
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_select.zigbee2mqtt_log_level
+  condition: []
+  action:
+  - data:
+      payload_template: '{{ states(''input_select.zigbee2mqtt_log_level'') }}'
+      topic: zigbee2mqtt/bridge/request/config/log_level
+    action: mqtt.publish
+  mode: single
+  initial_state: 'on'
+- id: '1729754282857'
+  alias: Warn that fridge has been on for a while
+  description: Warn if the the fridge has been cooling for a longer time than usual
+  triggers:
+  - entity_id:
+    - sensor.emon_1_power
+    for:
+      hours: 1
+      minutes: 0
+      seconds: 0
+    above: 50
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - data:
+      message: Fridge turned on
+      title: Info
+    action: notify.notify
+    enabled: false
+  - repeat:
+      count: 100
+      sequence:
+      - condition: numeric_state
+        entity_id: sensor.emon_1_power
+        above: 50
+      - data:
+          message: 'The fridge has been on for a while and might be open. '
+          title: Warning!
+        action: notify.notify
+      - delay:
+          hours: 0
+          minutes: 10
+          seconds: 0
+          milliseconds: 0
+  mode: single
+- id: '1729756115565'
+  alias: Zigbee Device Joined Notification
+  description: ''
+  triggers:
+  - topic: zigbee2mqtt/bridge/event
+    trigger: mqtt
+  conditions:
+  - condition: template
+    value_template: '{{trigger.payload_json.type == "device_interview" and trigger.payload_json.data.status
+      == "successful" and trigger.payload_json.data.supported}}'
+  actions:
+  - data_template:
+      title: Device joined the Zigbee2MQTT network
+      message: 'Name: {{trigger.payload_json.data.friendly_name}}, Vendor: {{trigger.payload_json.data.definition.vendor}},
+        Model: {{trigger.payload_json.data.definition.model}}, Description: {{trigger.payload_json.data.definition.description}}'
+    action: persistent_notification.create
+  mode: single
+- id: '1729756202906'
+  alias: Zigbee2MQTT Log Level
+  description: ''
+  triggers:
+  - entity_id: input_select.zigbee2mqtt_log_level
+    trigger: state
+  conditions: []
+  actions:
+  - data:
+      payload_template: '{{ states(''input_select.zigbee2mqtt_log_level'') }}'
+      topic: zigbee2mqtt/bridge/request/config/log_level
+    action: mqtt.publish
+  mode: single
+  initial_state: 'on'
+- id: '1729759414209'
+  alias: Zigbee Join Disabled
+  description: ''
+  triggers:
+  - event_type: timer.finished
+    event_data:
+      entity_id: timer.zigbee_permit_join
+    trigger: event
+  - entity_id: switch.zigbee2mqtt_main_join
+    to: 'off'
+    trigger: state
+  conditions: []
+  actions:
+  - data:
+      entity_id: timer.zigbee_permit_join
+    action: timer.cancel
+  - entity_id: switch.zigbee2mqtt_main_join
+    action: switch.turn_off
+  mode: single
+- id: '1729759428318'
+  alias: Zigbee Join Enabled
+  description: ''
+  triggers:
+  - entity_id: switch.zigbee2mqtt_main_join
+    to: 'on'
+    trigger: state
+  conditions: []
+  actions:
+  - entity_id: timer.zigbee_permit_join
+    data_template:
+      duration: '{{ ''00:0%i:00'' % (states(''input_number.zigbee2mqtt_join_minutes'')
+        | int ) }}'
+    action: timer.start
+  mode: single
+- id: '1730048938733'
+  alias: 'Turn on hallway light in the evening '
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: '-2'
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6ebf6ff5f0e48348d5c1ccf0f53c9b05
+    entity_id: ce94da4b8db77af80199d747d89b18e8
+    domain: switch
+  mode: single
+- id: '1730049016695'
+  alias: 'Turn off the hallway light in the afternoon '
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunrise
+    offset: '-2'
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6ebf6ff5f0e48348d5c1ccf0f53c9b05
+    entity_id: ce94da4b8db77af80199d747d89b18e8
+    domain: switch
+  mode: single
+- id: '1739726255978'
+  alias: 'Notification Low battery '
+  description: ''
+  use_blueprint:
+    path: sbyx/low-battery-level-detection-notification-for-all-battery-sensors.yaml
+    input:
+      exclude:
+        entity_id: []
+        label_id: battery
+      time: '17:00:00'
+      actions:
+      - action: notify.mobile_app_p4a
+        metadata: {}
+        data: {}
+- id: '1747925186116'
+  alias: Controller - IKEA E1524/E1810 TRÅDFRI Wireless 5-Button Remote
+  description: ''
+  use_blueprint:
+    path: EPMatt/ikea_e1524_e1810.yaml
+    input:
+      integration: Zigbee2MQTT
+      controller_entity: sensor.remotes
+      helper_last_controller_event: input_text.remote_control_blueprint_helper
+      action_button_center_long:
+      - action: button.press
+        metadata: {}
+        data: {}
+        target:
+          device_id: 0c46baf80a1b6c63cc65786f55d555ce

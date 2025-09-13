@@ -1,0 +1,251 @@
+wake_up_sequence:
+  alias: wake up sequence
+  sequence:
+  - device_id: 51467b358dad8af0586cc55ba6597f2f
+    domain: select
+    entity_id: select.nightlight_preset
+    type: select_option
+    option: WakeupLight
+  - device_id: 1d642ece31d1b5bab9809847bfd0eab9
+    domain: select
+    entity_id: select.adalight_preset
+    type: select_option
+    option: Evening
+  - delay:
+      hours: 0
+      minutes: 20
+      seconds: 0
+      milliseconds: 0
+  - device_id: 51467b358dad8af0586cc55ba6597f2f
+    domain: select
+    entity_id: select.nightlight_preset
+    type: select_option
+    option: MorningLight
+  - device_id: 1d642ece31d1b5bab9809847bfd0eab9
+    domain: select
+    entity_id: select.adalight_preset
+    type: select_option
+    option: MorningLight
+  - delay:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  - alias: blink big ceiling light
+    parallel:
+    - repeat:
+        sequence:
+        - service: light.turn_on
+          metadata: {}
+          data:
+            flash: short
+          target:
+            device_id: 2512feeda81049992778184af8ab0de4
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 1
+            milliseconds: 0
+        - service: light.turn_off
+          metadata: {}
+          data: {}
+          target:
+            device_id: 2512feeda81049992778184af8ab0de4
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 1
+            milliseconds: 0
+        until:
+        - condition: state
+          entity_id: input_boolean.lighttrigger
+          state: 'on'
+  mode: single
+  icon: mdi:alarm-multiple
+decrease_brigthness:
+  alias: 'decrease brightness '
+  sequence:
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 1d642ece31d1b5bab9809847bfd0eab9
+        entity_id: light.adalight
+        domain: light
+      then:
+      - device_id: 1d642ece31d1b5bab9809847bfd0eab9
+        domain: light
+        entity_id: light.adalight
+        type: brightness_decrease
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 51467b358dad8af0586cc55ba6597f2f
+        entity_id: light.nightlight_segment_1
+        domain: light
+      then:
+      - device_id: 51467b358dad8af0586cc55ba6597f2f
+        domain: light
+        entity_id: light.nightlight_segment_1
+        type: brightness_decrease
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 6b3464aac03070ec08f22b79e61e0de0
+        entity_id: ccb8da50b3e9437e78a270cc96c31a77
+        domain: light
+      then:
+      - device_id: 6b3464aac03070ec08f22b79e61e0de0
+        domain: light
+        entity_id: ccb8da50b3e9437e78a270cc96c31a77
+        type: brightness_decrease
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 2512feeda81049992778184af8ab0de4
+        entity_id: 99dd4cd935595f3507f6d4b575999aca
+        domain: light
+      then:
+      - device_id: 2512feeda81049992778184af8ab0de4
+        domain: light
+        entity_id: 99dd4cd935595f3507f6d4b575999aca
+        type: brightness_decrease
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: e02c713ed191cbc9d7379043234bda97
+        entity_id: 7e113eb694a813b7fe70bd661877b5d8
+        domain: light
+      then:
+      - device_id: e02c713ed191cbc9d7379043234bda97
+        domain: light
+        entity_id: 7e113eb694a813b7fe70bd661877b5d8
+        type: brightness_decrease
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: fe73021a9ab37c1ff78d32213df9f0b5
+        entity_id: e8696ed820d7c48a20f1caa62ecc700e
+        domain: light
+      then:
+      - device_id: fe73021a9ab37c1ff78d32213df9f0b5
+        domain: light
+        entity_id: e8696ed820d7c48a20f1caa62ecc700e
+        type: brightness_decrease
+  mode: parallel
+  max: 10
+increase_brightness:
+  alias: Increase brightness
+  sequence:
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 1d642ece31d1b5bab9809847bfd0eab9
+        entity_id: light.adalight
+        domain: light
+      then:
+      - device_id: 1d642ece31d1b5bab9809847bfd0eab9
+        domain: light
+        entity_id: light.adalight
+        type: brightness_increase
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 51467b358dad8af0586cc55ba6597f2f
+        entity_id: light.nightlight_segment_1
+        domain: light
+      then:
+      - device_id: 51467b358dad8af0586cc55ba6597f2f
+        domain: light
+        entity_id: light.nightlight_segment_1
+        type: brightness_increase
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 6b3464aac03070ec08f22b79e61e0de0
+        entity_id: ccb8da50b3e9437e78a270cc96c31a77
+        domain: light
+      then:
+      - device_id: 6b3464aac03070ec08f22b79e61e0de0
+        domain: light
+        entity_id: ccb8da50b3e9437e78a270cc96c31a77
+        type: brightness_increase
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: 2512feeda81049992778184af8ab0de4
+        entity_id: 99dd4cd935595f3507f6d4b575999aca
+        domain: light
+      then:
+      - device_id: 2512feeda81049992778184af8ab0de4
+        domain: light
+        entity_id: 99dd4cd935595f3507f6d4b575999aca
+        type: brightness_increase
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: e02c713ed191cbc9d7379043234bda97
+        entity_id: 7e113eb694a813b7fe70bd661877b5d8
+        domain: light
+      then:
+      - device_id: e02c713ed191cbc9d7379043234bda97
+        domain: light
+        entity_id: 7e113eb694a813b7fe70bd661877b5d8
+        type: brightness_increase
+  - parallel:
+    - if:
+      - condition: device
+        type: is_on
+        device_id: fe73021a9ab37c1ff78d32213df9f0b5
+        entity_id: e8696ed820d7c48a20f1caa62ecc700e
+        domain: light
+      then:
+      - device_id: fe73021a9ab37c1ff78d32213df9f0b5
+        domain: light
+        entity_id: e8696ed820d7c48a20f1caa62ecc700e
+        type: brightness_increase
+  mode: parallel
+  max: 10
+livingroom_on:
+  alias: Livingroom On
+  sequence:
+  - type: turn_on
+    device_id: e02c713ed191cbc9d7379043234bda97
+    entity_id: light.big_ceiling
+    domain: light
+    flash: short
+  mode: single
+start_night_mode:
+  alias: Start night mode
+  sequence: []
+  mode: single
+zigbee2mqtt_remove_2:
+  alias: Zigbee2MQTT Remove
+  sequence:
+  - data_template:
+      topic: zigbee2mqtt/bridge/request/device/remove
+      payload_template: "{\n  \"id\": \"{{ states.input_text.zigbee2mqtt_remove.state
+        | string }}\",\n  \"force\": {% if states.input_boolean.zigbee2mqtt_force_remove.state
+        == \"off\" %}false{% else %}true{% endif %}\n}"
+    action: mqtt.publish
+  description: ''
+zigbee2mqtt_rename_2:
+  alias: Zigbee2MQTT Rename
+  sequence:
+  - data_template:
+      topic: zigbee2mqtt/bridge/request/device/rename
+      payload_template: "{\n  \"from\": \"{{ states.input_text.zigbee2mqtt_old_name.state
+        | string }}\",\n  \"to\": \"{{ states.input_text.zigbee2mqtt_new_name.state
+        | string }}\"\n}"
+    action: mqtt.publish
+  description: ''

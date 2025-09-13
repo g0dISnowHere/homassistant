@@ -1,0 +1,368 @@
+blueprint:
+  name: Change daytime mode
+  description: 'This Blueprint changes the state of a Input_select depending on the
+    time of the day and of today ore tomorrow ist a day off. '
+  domain: automation
+  input:
+    dayzykle:
+      name: Dayzykle
+      description: 'This must be an input_select with the variaty of dayzykle. The
+        input_select must contains minimum following selectors: Wakeup, Morning, Lunchtime,
+        Afternoon, Evening, Bedtime.'
+      selector:
+        entity:
+          domain: input_select
+    day_off_today:
+      name: day off today
+      description: Boolan sensor if today is a day off.
+      selector:
+        entity:
+          domain: binary_sensor
+    day_off_tomorrow:
+      name: day off tomorrow
+      description: Boolan sensor if tomorrow is a day off.
+      selector:
+        entity:
+          domain: binary_sensor
+    wakeup:
+      name: Wakeup time
+      description: Time when changing the input_select to Wakeup mode!
+      selector:
+        time: {}
+    wakeup_day_off:
+      name: Wakeup time day off
+      description: Time when changing the input_select to Wakeup mode on day off!
+      selector:
+        time: {}
+    morning:
+      name: Morning time
+      description: Time when changing the input_select to Morning mode!
+      selector:
+        time: {}
+    morning_day_off:
+      name: Morning time day off
+      description: Time when changing the input_select to Morning mode on day off!
+      selector:
+        time: {}
+    lunchtime:
+      name: Lunchtime
+      description: Time when changing the input_select to lunchtime mode!
+      selector:
+        time: {}
+    afternoon:
+      name: Afternoon
+      description: Time when changing the input_select to afternoon mode!
+      selector:
+        time: {}
+    evening:
+      name: Evening
+      description: Time when changing the input_select to evening mode!
+      selector:
+        time: {}
+    bedtime_no_day_off_tomorrow:
+      name: bedtime_no_day_off_tomorrow
+      description: Time when changing the input_select to bedtime mode when tomorre
+        is no day off!
+      selector:
+        time: {}
+  source_url: https://community.home-assistant.io/t/sets-daytime-mode-depending-on-time-and-day-off/318156
+mode: restart
+trigger:
+- platform: time
+  at: !input 'wakeup'
+- platform: time
+  at: !input 'wakeup_day_off'
+- platform: time
+  at: !input 'morning'
+- platform: time
+  at: !input 'morning_day_off'
+- platform: time
+  at: !input 'lunchtime'
+- platform: time
+  at: !input 'afternoon'
+- platform: time
+  at: !input 'evening'
+- platform: time
+  at: !input 'bedtime_no_day_off_tomorrow'
+- platform: homeassistant
+  event: start
+action:
+- variables:
+    trigger_id: '{{ trigger.id }}'
+- choose:
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 0 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'off'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Wakeup
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 1 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'on'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Wakeup
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 2 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'off'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Morning
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 3 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'on'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Morning
+  - conditions:
+      condition: template
+      value_template: '{{ trigger_id == 4 }}
+
+        '
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Lunchtime
+  - conditions:
+      condition: template
+      value_template: '{{ trigger_id == 5 }}
+
+        '
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Afternoon
+  - conditions:
+      condition: template
+      value_template: '{{ trigger_id == 6 }}
+
+        '
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Evening
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 7 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_tomorrow'
+        state: 'off'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Bedtime
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'off'
+      - condition: time
+        after: !input 'wakeup'
+        before: !input 'morning'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Wakeup
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'on'
+      - condition: time
+        after: !input 'wakeup_day_off'
+        before: !input 'morning_day_off'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Wakeup
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'off'
+      - condition: time
+        after: !input 'morning'
+        before: !input 'lunchtime'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Morning
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_today'
+        state: 'on'
+      - condition: time
+        after: !input 'morning_day_off'
+        before: !input 'lunchtime'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Morning
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: time
+        after: !input 'lunchtime'
+        before: !input 'afternoon'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Lunchtime
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: time
+        after: !input 'afternoon'
+        before: !input 'evening'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Afternoon
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_tomorrow'
+        state: 'off'
+      - condition: time
+        after: !input 'evening'
+        before: !input 'bedtime_no_day_off_tomorrow'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Evening
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_tomorrow'
+        state: 'on'
+      - condition: time
+        after: !input 'evening'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Evening
+  - conditions:
+    - condition: and
+      conditions:
+      - condition: template
+        value_template: '{{ trigger_id == 8 }}
+
+          '
+      - condition: state
+        entity_id: !input 'day_off_tomorrow'
+        state: 'off'
+      - condition: time
+        after: !input 'bedtime_no_day_off_tomorrow'
+    sequence:
+    - service: input_select.select_option
+      target:
+        entity_id: !input 'dayzykle'
+      data:
+        option: Bedtime

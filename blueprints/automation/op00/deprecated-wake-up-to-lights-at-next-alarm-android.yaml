@@ -1,0 +1,117 @@
+blueprint:
+  name: Wake up to lights at next alarm
+  description: Wakes you up to lights at your phones next alarm with an offset
+  domain: automation
+  author: op00
+  input:
+    offset:
+      name: Offset
+      description: Set a offset in seconds to the next alarm. When (before) the lights
+        should turn on
+      selector:
+        number:
+          min: 0.0
+          max: 3600.0
+          mode: box
+          step: 1.0
+          unit_of_measurement: Seconds
+    target_light:
+      name: Lights
+      description: The lights that will wake you up
+      selector:
+        target:
+          entity:
+          - domain:
+            - light
+    transition:
+      name: Transition Time
+      description: Set a transition time in seconds for the lights to go to the target
+        brightness
+      selector:
+        number:
+          min: 0.0
+          max: 300.0
+          mode: slider
+          step: 1.0
+          unit_of_measurement: Seconds
+    brightness:
+      name: Brightness
+      description: Number indicating percentage of full brightness, where 0 turns
+        the light off, 1 is the minimum brightness and 100 is the maximum brightness
+        supported by the light
+      selector:
+        number:
+          min: 0.0
+          max: 100.0
+          unit_of_measurement: '%'
+          mode: slider
+          step: 1.0
+    alarm_source:
+      name: Alarm Source
+      description: Select the alarm source
+      selector:
+        entity:
+          integration: mobile_app
+          device_class:
+          - timestamp
+          multiple: false
+    alarm_helper:
+      name: Alarm Helper
+      description: Select the date time helper
+      selector:
+        entity:
+          integration: input_datetime
+          multiple: false
+    location:
+      name: Location
+      description: Location where people need to be for the alarm to go off
+      selector:
+        entity:
+          integration: zone
+          multiple: false
+    people:
+      name: People
+      description: Alarm only when these people are home
+      selector:
+        entity:
+          integration: person
+          multiple: false
+  source_url: https://community.home-assistant.io/t/wake-up-to-lights-at-next-alarm-android/438277
+variables:
+  offset: !input offset
+trigger:
+- platform: time
+  at: !input alarm_helper
+  id: wake_up
+- platform: state
+  entity_id:
+  - !input alarm_source
+  id: helper_update
+action:
+- choose:
+  - conditions:
+    - condition: trigger
+      id: helper_update
+    - condition: template
+      value_template: '{{ trigger.to_state.state not in ["unknown","unavailable"]
+        }}'
+    sequence:
+    - service: input_datetime.set_datetime
+      data:
+        timestamp: '{{ (as_timestamp(trigger.to_state.state) |int ) - (offset)}}'
+      target:
+        entity_id: !input alarm_helper
+  - conditions:
+    - condition: trigger
+      id: wake_up
+    - condition: zone
+      entity_id: !input people
+      zone: !input location
+    sequence:
+    - service: light.turn_on
+      data:
+        transition: !input transition
+        brightness_pct: !input brightness
+      target: !input target_light
+  default: []
+mode: single

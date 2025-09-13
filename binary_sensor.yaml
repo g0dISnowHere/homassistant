@@ -1,0 +1,38 @@
+# https://www.home-assistant.io/integrations/workday/#days_offset
+  - platform: workday
+    country: DE
+    province: SN
+    name: Workday
+    workdays: [mon, tue, wed, thu, fri]
+    excludes: [sat, sun, holiday]
+    add_holidays: []
+    remove_holidays: []
+
+  - platform: workday
+    name: Day Before Workday
+    country: DE
+    province: SN
+    workdays: [mon, tue, wed, thu, fri]
+    excludes: [sat, sun, holiday]
+    add_holidays: []
+    remove_holidays: []
+    days_offset: 1
+    
+  - platform: workday
+    name: Holiday
+    country: DE
+    province: SN
+    workdays: [sat, sun, holiday]
+    excludes: []
+    add_holidays: []
+    remove_holidays: []
+    
+  - platform: workday
+    name: Day Before Holiday
+    country: DE
+    province: SN
+    workdays: [sat, sun, holiday]
+    excludes: []
+    add_holidays: []
+    remove_holidays: []
+    days_offset: 1

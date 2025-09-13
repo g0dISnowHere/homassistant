@@ -1,0 +1,135 @@
+{
+    "0xccccccfffe934c59": {
+        "color_mode": "color_temp",
+        "state": "ON",
+        "brightness": 254,
+        "color_temp": 328,
+        "update": {
+            "state": "idle",
+            "installed_version": 587814449,
+            "latest_version": 587814449
+        },
+        "update_available": false,
+        "linkquality": 255,
+        "color": {
+            "x": 0.4341,
+            "y": 0.4031
+        },
+        "last_seen": "2025-07-15T21:23:08.859Z",
+        "level_config": {
+            "on_off_transition_time": 5,
+            "on_level": "previous"
+        },
+        "power_on_behavior": "on"
+    },
+    "0x000b57fffeb9e05b": {
+        "state": "ON",
+        "update": {
+            "state": "idle",
+            "installed_version": 587810353,
+            "latest_version": 587810353
+        },
+        "update_available": false,
+        "brightness": 254,
+        "linkquality": 255,
+        "last_seen": "2025-07-15T21:23:08.770Z",
+        "level_config": {
+            "on_off_transition_time": 5,
+            "current_level_startup": "previous",
+            "on_level": "previous",
+            "execute_if_off": false
+        },
+        "power_on_behavior": "on"
+    },
+    "0xccccccfffea81914": {
+        "battery": 20,
+        "linkquality": 255,
+        "update": {
+            "state": "idle",
+            "installed_version": 604241925,
+            "latest_version": 604241925
+        },
+        "update_available": false,
+        "last_seen": "2025-07-15T13:38:33.330Z"
+    },
+    "0x00124b00246f6dcb": {
+        "color_mode": "color_temp",
+        "state": "ON",
+        "brightness": 254,
+        "color_temp": 153,
+        "color": {
+            "x": 0.3131,
+            "y": 0.3232
+        },
+        "linkquality": 255,
+        "last_seen": "2025-01-17T17:37:39.967Z"
+    },
+    "0x00124b00246f6ded": {
+        "color_mode": "color_temp",
+        "state": "OFF",
+        "brightness": 252,
+        "color_temp": 153,
+        "color": {
+            "x": 0.3131,
+            "y": 0.3232
+        },
+        "linkquality": 255,
+        "last_seen": "2025-07-15T21:09:50.209Z"
+    },
+    "0xa4c138d187fcf2e1": {
+        "state": "ON",
+        "color_mode": "color_temp",
+        "color": {
+            "hue": 35,
+            "saturation": 72,
+            "h": 35,
+            "s": 72,
+            "x": 0.4273,
+            "y": 0.4005
+        },
+        "brightness": 255,
+        "color_temp": 318,
+        "linkquality": 255,
+        "last_seen": "2025-07-15T21:36:53.239Z",
+        "level_config": {
+            "on_level": "previous"
+        }
+    },
+    "0xa4c138a08226caf4": {
+        "battery_low": false,
+        "last_seen": "2025-07-15T21:34:38.697Z",
+        "linkquality": 255,
+        "local_temperature": 17,
+        "system_mode": "off",
+        "current_heating_setpoint": 5,
+        "running_state": "idle",
+        "frost_protection": "ON",
+        "scale_protection": "ON",
+        "child_lock": "UNLOCK"
+    },
+    "0x540f57fffeec8aea": {
+        "system_mode": "heat",
+        "last_seen": "2025-07-15T21:31:38.029Z",
+        "linkquality": 255,
+        "child_lock": "UNLOCK",
+        "local_temperature_calibration": 0,
+        "eco_temperature": 3,
+        "comfort_temperature": 3.6,
+        "current_heating_setpoint": 15,
+        "open_window_temperature": 2,
+        "detect_window_time_minute": 0,
+        "away_setting": {
+            "away_preset_days": 1,
+            "away_preset_temperature": 13.5,
+            "month": 7,
+            "year": 2025,
+            "day": 15,
+            "hour": 19,
+            "minute": 53
+        },
+        "local_temperature": 20,
+        "battery": "20.4",
+        "schedule_override_setpoint": 3.4,
+        "window_open": "NO"
+    }
+}

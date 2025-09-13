@@ -1,0 +1,40 @@
+substitutions:
+  device_name: basic_config
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${device_name}
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "cluA6g/bvEz70cSZEt/cKz5/DIFTR9ugBSDX/Bi4qlI="
+
+ota:
+  password: "42d06e7a1b554eab5b273e444c4a6a01"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  use_address: 10.20.30.xx
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "${device_name} Fallback Hotspot"
+    password: "qhIby8mF64uL"
+
+captive_portal:
+    
+web_server:
+  port: 80
+  auth:
+    username: admin
+    password: !secret web_server_password

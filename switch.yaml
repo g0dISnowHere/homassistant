@@ -1,0 +1,21 @@
+# https://www.home-assistant.io/integrations/wake_on_lan/
+    - platform: wake_on_lan
+      name: proxmox
+      mac: "14:da:e9:4f:8f:cd"
+      host: 192.168.3.204
+      # https://www.creatingsmarthome.com/index.php/2022/02/12/guide-start-up-and-shut-down-remote-linux-pc-using-home-assistant/
+      turn_off:
+        service: hassio.addon_stdin
+        data:
+            addon: core_rpc_shutdown
+            input: proxmox
+      
+    - platform: wake_on_lan
+      name: windows
+      mac: "30:9C:23:49:08:5B"
+      host: 192.168.3.211
+      turn_off:
+        service: hassio.addon_stdin
+        data:
+            addon: core_rpc_shutdown
+            input: windows

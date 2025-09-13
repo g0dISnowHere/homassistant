@@ -1,0 +1,8 @@
+.storage/*
+node-red/*
+*.db*
+zigbee2mqtt/log/*
+custom_components/*
+www/*
+*.log*
+watchman_report.txt

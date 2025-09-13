@@ -1,0 +1,170 @@
+blueprint:
+  name: Turn_on_light_inputselect
+  description: Depending on input_select state a diverent lightprofile should be used
+    when turning on the light.
+  domain: automation
+  input:
+    light_target:
+      name: Light
+      selector:
+        target:
+          entity:
+            domain: light
+    dayzykle:
+      name: Dayzykle
+      description: 'This must be an input_select with a variaty of dayzykle. Following
+        nine selectors are used. Wakeup, Frühstück, Vormittag, Mittag, Nachmittag,
+        Abendessen, Abend, Bettgehen, Nachtmodus '
+      selector:
+        entity:
+          domain: input_select
+    transition_time_on:
+      name: Transition time turn on
+      description: Set the Transition time for turn on lights
+      default: 4
+      selector:
+        number:
+          min: 0.0
+          max: 100.0
+          mode: slider
+          step: 1.0
+    wakeup_profil:
+      name: Wakeup
+      description: 'options:'
+      default: Energise
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    morning_profil:
+      name: Morning
+      description: 'options:'
+      default: Concentrate
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    lunchtime_profil:
+      name: Lunchtime
+      description: 'options:'
+      default: Energise
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    afternoon_profil:
+      name: Afternoon
+      description: 'options:'
+      default: Concentrate
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    evening_profil:
+      name: Evening
+      description: 'options:'
+      default: Relax
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    bedtime_profil:
+      name: Bedtime
+      description: 'options:'
+      default: Relax
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+    nightmode_profil:
+      name: Nightmode
+      description: 'options:'
+      default: Night
+      selector:
+        select:
+          options:
+          - Relax
+          - Concentrate
+          - Reading
+          - Energise
+          - Night
+  source_url: https://community.home-assistant.io/t/turn-on-a-light-with-different-light-profile-depending-on-a-daytime-mode-from-a-input-select/318170
+mode: restart
+trigger:
+action:
+- variables:
+    state_dayzykle: !input 'dayzykle'
+- choose:
+  - conditions: '{{ is_state(state_dayzykle, ''Wakeup'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'wakeup_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Morning'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'morning_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Lunchtime'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'lunchtime_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Afternoon'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'afternoon_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Evening'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'evening_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Bedtime'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'bedtime_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'
+  - conditions: '{{ is_state(state_dayzykle, ''Nightmode'') }}'
+    sequence:
+    - service: light.turn_on
+      data:
+        profile: !input 'nightmode_profil'
+        transition: !input 'transition_time_on'
+      target: !input 'light_target'

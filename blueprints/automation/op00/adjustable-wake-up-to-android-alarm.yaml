@@ -1,0 +1,110 @@
+blueprint:
+  name: Adjustable Wake-up to Android alarm
+  description: "# Adjustable Wake-up to Android alarm v2\nWhen the specified __conditions__
+    are satisfied, it runs these specified __actions__ prior the phone's next alarm\n
+    \n## \U0001F527 Requirements:\n  - [Android app](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android)
+    installed on your phone\n  - Next alarm sensor activated in the app (HA App →
+    Settings → Companion App → Manage Sensors → Next Alarm → enable)\n  - Date and
+    time helper entity\n    [![Open your Home Assistant instance and show your helper
+    entities.](https://my.home-assistant.io/badges/helpers.svg)](https://my.home-assistant.io/redirect/helpers/)
+    \   \n  - Home Assistant version 2023.8.0 or higher\n\n## \U0001F4A1Some Inspiratios:
+    **(at your own risk)**\n - If the sun has not risen yet, turn on the bedroom lights
+    10 minutes before the phone alarm goes off\n - If person 1 is at home, switch
+    on the TV and tune it to a news channel 30 minutes before the phone alarm rings\n
+    - If person 2 is not at home, retrieve today's calendar events and announce them
+    on the bedroom speaker 2 minutes before the alarm is set to go off\n - If the
+    temperature outside is below 0°C, start warming up the car 45 minutes before the
+    alarm is set to go off\n - Wake up to an inspirational quote from a text-to-speech
+    service, right before the alarm goes off\n"
+  domain: automation
+  author: op00
+  homeassistant:
+    min_version: 2023.8.0
+  source_url: https://community.home-assistant.io/t/adjustable-wake-up-to-android-alarm/599838
+  input:
+    offset:
+      name: Offset
+      description: "Enter an offset in seconds for the next alarm. Specify when the
+        action should run __before__ the alarm\n\n _max: 3600s = 1 hour_"
+      selector:
+        number:
+          min: 0.0
+          max: 3600.0
+          mode: box
+          step: 1.0
+          unit_of_measurement: Seconds
+    alarm_source:
+      name: Alarm Source
+      description: "Select the alarm source\n\n _your Android phone's next alarm sensor_"
+      selector:
+        entity:
+          filter:
+          - integration: mobile_app
+            device_class:
+            - timestamp
+          multiple: false
+    alarm_helper:
+      name: Alarm Helper
+      description: "Select the date and time helper\n\n _manually created helper_"
+      selector:
+        entity:
+          filter:
+          - domain:
+            - input_datetime
+          multiple: false
+    conditions:
+      name: Conditions
+      description: "Choose the circumstances under which the actions will or will
+        not run\n\n _can be multiple or none_"
+      default: []
+      selector:
+        condition: {}
+    actions:
+      name: Actions
+      description: "Actions to run before alarm goes off\n\n _can be multiple_"
+      default: []
+      selector:
+        action: {}
+variables:
+  offset: !input offset
+trigger:
+- platform: time
+  at: !input alarm_helper
+  id: wake_up
+- platform: state
+  entity_id:
+  - !input alarm_source
+  id: helper_update
+action:
+- choose:
+  - conditions:
+    - condition: trigger
+      id: helper_update
+    - condition: template
+      value_template: '{{ trigger.to_state.state not in ["unknown","unavailable"]
+        }}'
+    sequence:
+    - service: input_datetime.set_datetime
+      data:
+        timestamp: '{{ (as_timestamp(trigger.to_state.state) |int ) - (offset)}}'
+      target:
+        entity_id: !input alarm_helper
+  - conditions:
+    - condition: trigger
+      id: helper_update
+    - condition: template
+      value_template: '{{ trigger.to_state.state in ["unknown","unavailable"] }}'
+    sequence:
+    - service: input_datetime.set_datetime
+      data:
+        datetime: '1970-01-01 00:00:00'
+      target:
+        entity_id: !input alarm_helper
+  - conditions:
+    - condition: trigger
+      id: wake_up
+    - condition: and
+      conditions: !input conditions
+    sequence: !input actions
+  default: []
+mode: single

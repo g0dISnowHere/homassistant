@@ -1,0 +1,40 @@
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'date_time_utc'
+      - 'date_time_iso'
+      - 'time_date'
+      - 'time_utc'
+      
+# Example configuration.yaml entry
+
+#  - platform: mqtt
+#    name: "Timer 1"
+#    state_topic: "tele/sonoff/sensor"
+#    value_template: "{{ value_json.Timer1.Arm }}"
+#    json_attributes_topic: "tele/sonoff/sensor"
+#    json_attributes_template: "{{ value_json.Timer1 | tojson }}"
+#
+# for this mqtt message
+#    {
+#        "Timer1":
+#        {
+#            "Arm": <status>,
+#            "Time": <time>
+#        },
+#        "Timer2":
+#        {
+#             "Arm": <status>, 
+#             "Time": <time>
+#         }
+#        
+#    }
+
+#   - platform: openweathermap_all
+    # api_key: 353d74faf27613ad0389567c73e1cc7d
+    # latitude: 51.06666808095045
+    # longitude: 13.759331455982624
+    
+

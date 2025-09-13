@@ -1,0 +1,104 @@
+ 
+sensor:
+
+#    json_attributes_topic: "tele/sonoff/sensor"
+#    json_attributes_template: "{{ value_json.Timer2 | tojson }}"
+    
+    #tele/tasmota_F28960/SENSOR = 
+#    {
+#        "Time":"2021-09-05T19:33:10",
+#        "ATC09a2dc":  
+#        {
+#            "mac":"a4c13809a2dc",
+#            "Temperature":23.3,
+#            "Humidity":55.7,
+#            "DewPoint":13.9,
+#            "Battery":78,
+#             "RSSI":-61},
+#        "ATCb9a07d":
+#        {
+#            "mac":"a4c138b9a07d",
+#            "Temperature":21.2,
+#            "Humidity":59.3,
+#            "DewPoint":12.9,
+#            "Battery":88,
+#            "RSSI":-81
+#            
+#        }
+#        
+#    }
+
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "kitchen temperature"
+    unique_id: kitchen_temp
+    value_template: "{{ value_json.ATC09a2dc.Temperature }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "kitchen humidity"
+    unique_id: kitchen_hum
+    value_template: "{{ value_json.ATC09a2dc.Humidity }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "kitchen dew point"
+    value_template: "{{ value_json.ATC09a2dc.DewPoint }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "kitchen battery"
+    value_template: "{{ value_json.ATC09a2dc.Battery }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "hallway temperature"
+    value_template: "{{ value_json.ATCb9a07d.Temperature }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "hallway humidity"
+    value_template: "{{ value_json.ATCb9a07d.Humidity }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "hallway dew point"
+    value_template: "{{ value_json.ATCb9a07d.DewPoint }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "hallway battery"
+    value_template: "{{ value_json.ATCb9a07d.Battery }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "bathroom temperature"
+    value_template: "{{ value_json.ATCd7581d.Temperature }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "bathroom humidity"
+    value_template: "{{ value_json.ATCd7581d.Humidity }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "bathroom dew point"
+    value_template: "{{ value_json.ATCd7581d.DewPoint }}"
+    state_class: measurement
+    unit_of_measurement: °C
+    
+  - state_topic: "tele/tasmota_F28960/SENSOR"
+    name: "bathroom battery"
+    value_template: "{{ value_json.ATCd7581d.Battery }}"
+    state_class: measurement
+    unit_of_measurement: "%"
+    
