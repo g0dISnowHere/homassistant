@@ -6,3 +6,7 @@ custom_components/*
 www/*
 *.log*
 watchman_report.txt
+.cache/
+*.mp3
+
+secrets.yaml

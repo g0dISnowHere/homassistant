@@ -12,6 +12,7 @@ blueprint:
           domain:
           - sensor
           multiple: false
+          reorder: false
     toggle_action:
       name: Toggle Action
       default: []

@@ -79,4 +79,4 @@ blocklist:
   - '0x000d6ffffe7beb83'
   - '0x001788010b097113'
 ota: {}
-version: 5
+version: 4

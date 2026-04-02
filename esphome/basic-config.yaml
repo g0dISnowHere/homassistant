@@ -18,8 +18,9 @@ api:
   encryption:
     key: "cluA6g/bvEz70cSZEt/cKz5/DIFTR9ugBSDX/Bi4qlI="
 
-ota:
-  password: "42d06e7a1b554eab5b273e444c4a6a01"
+ota:  
+  - platform: esphome
+    password: "42d06e7a1b554eab5b273e444c4a6a01"
 
 wifi:
   ssid: !secret wifi_ssid
@@ -38,3 +39,34 @@ web_server:
   auth:
     username: admin
     password: !secret web_server_password
+
+sensor:
+
+# wifi coverage and device tracking
+  - platform: wifi_signal
+    name: "${device_name} WiFi Signal"
+    update_interval: 60s
+    filters:
+      - median:
+          window_size: 11
+          send_every: 5
+          send_first_at: 5
+    accuracy_decimals: 0
+  - platform: uptime
+    name: "${device_name} Uptime"
+    unit_of_measurement: days
+    update_interval: 300s
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.000011574
+
+# Sensors for ESP version and WIFI information
+text_sensor:
+  - platform: version
+    name: "${device_name} ESPHome Version"
+  - platform: wifi_info
+    ip_address:
+      name: "${device_name} ip"
+    ssid:
+      name: "${device_name} ssid"
+

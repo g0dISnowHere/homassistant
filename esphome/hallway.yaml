@@ -14,13 +14,14 @@ api:
   encryption:
     key: "xtYp3QaTRJn7H7vVmuaRQ4sp2bQcIZrZdOqc168L2F0="
 
-ota:
-  password: "149b5be90a4cc2a182858233b3d3fea7"
+ota:  
+  - platform: esphome
+    password: "149b5be90a4cc2a182858233b3d3fea7"
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-  use_address: 10.20.30.126
+  use_address: 10.20.30.125
 
 # Optional manual IP
   # manual_ip:
@@ -59,22 +60,30 @@ i2c:
   scan: True
   id: bus_a
 
+# https://esphome.io/components/esp32_ble_tracker/
+esp32_ble_tracker:
+
 # https://esphome.io/components/sensor/bme280.html
-# https://esphome.io/components/sensor/#sensor-filters
+# https://esphome.io/components/sensor/#sensor-filters# Example configuration entry I2C
 sensor:
-  - platform: bme280
+  - platform: bme280_i2c
     temperature:
       name: "BME280 Temperature"
-      # oversampling: 16x
     pressure:
       name: "BME280 Pressure"
-      # oversampling: 16x
     humidity:
       name: "BME280 Humidity"
-      # oversampling: 16x
-    address: 0x77
-    update_interval: 60s
-    i2c_id: bus_a
+
+# Example configuration entry SPI
+# sensor:
+#   - platform: bme280_spi
+#     temperature:
+#       name: "BME280 Temperature"
+#     pressure:
+#       name: "BME280 Pressure"
+#     humidity:
+#       name: "BME280 Humidity"
+#     cs_pin: GPIOXX
   
   # https://esphome.io/components/sensor/internal_temperature
   - platform: internal_temperature
@@ -90,36 +99,71 @@ sensor:
   #         return (x / 10000.0) * 2000000.0;
 
 # https://esphome.io/components/sensor/xiaomi_ble.html
-# esp32_ble_tracker:
-  # - platform: xiaomi_lywsd03mmc
-  #   mac_address: "A4:C1:38:09:A2:DC"
-  #   bindkey: "eef418daf699a0c188f3bfd17e4565d9"
-  #   temperature:
-  #     name: "Kitchen Temperature"
-  #   humidity:
-  #     name: "Kitchen Humidity"
-  #   battery_level:
-  #     name: "Kitchen Battery Level"
+# ATC_Bad
+# Mi token
+# b7aac9efe7a4e7d0ccb8e540
+# Mi bindkey
+# 49ac58bfc62051cf293ba68be2852cf2
+# Mac
+# A4C138D7581D5C1B
+# known id
+# blt.3.129vPTkjYzATC
+# EEP bindkey
+# ?
 
-  # - platform: xiaomi_lywsd03mmc
-  #   mac_address: "A4:C1:38:B9:A0:7D"
-  #   bindkey: "eef418daf699a0c188f3bfd17e4565d9"
-  #   temperature:
-  #     name: "Hallway Temperature"
-  #   humidity:
-  #     name: "Hallway Humidity"
-  #   battery_level:
-  #     name: "Hallway Battery Level"
+# ATC_Flur
+# Mi token
+# 13c648686c03b520d6aebf49
+# Mi bindkey
 
-  # - platform: xiaomi_lywsd03mmc
-  #   mac_address: "A4:C1:38:D7:58:1D"
-  #   bindkey: "eef418daf699a0c188f3bfd17e4565d9"
-  #   temperature:
-  #     name: "Bathroom Temperature"
-  #   humidity:
-  #     name: "Bathroom Humidity"
-  #   battery_level:
-  #     name: "Bathroom Battery Level"
+# Mac
+# A4C138B9A07D4D20
+# known ID
+
+# EEP bindkey
+
+# ATC_Zimmer
+# Mi token 
+# 243f70b7c6fbb6bd3f50cc86
+# Mi bindkey
+# 59241e7315f3af57c5452ae128ebc519
+# Mac
+# A4C138B9A07D
+# known_ID
+
+# EEP bindkey
+
+# Pin code
+# 310231
+  - platform: xiaomi_lywsd03mmc
+    mac_address: "A4:C1:38:09:A2:DC"
+    bindkey: "eef418daf699a0c188f3bfd17e4565d9"
+    temperature:
+      name: "Kitchen Temperature"
+    humidity:
+      name: "Kitchen Humidity"
+    battery_level:
+      name: "Kitchen Battery Level"
+
+  - platform: xiaomi_lywsd03mmc
+    mac_address: "A4:C1:38:B9:A0:7D"
+    bindkey: "eef418daf699a0c188f3bfd17e4565d9"
+    temperature:
+      name: "Hallway Temperature"
+    humidity:
+      name: "Hallway Humidity"
+    battery_level:
+      name: "Hallway Battery Level"
+
+  - platform: xiaomi_lywsd03mmc
+    mac_address: "A4:C1:38:D7:58:1D"
+    bindkey: "eef418daf699a0c188f3bfd17e4565d9"
+    temperature:
+      name: "Bathroom Temperature"
+    humidity:
+      name: "Bathroom Humidity"
+    battery_level:
+      name: "Bathroom Battery Level"
 
 
 #https://esphome.io/components/sensor/ct_clamp.html

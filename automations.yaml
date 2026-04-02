@@ -166,21 +166,20 @@
   alias: buttons that switch the state of input_boolean.light_trigger
   description: ''
   triggers:
-  - entity_id: binary_sensor.mainlightswitch_input
-    from: 'on'
-    to: 'off'
+  - entity_id:
+    - binary_sensor.mainlightswitch_input_2
+    from:
+    - 'on'
+    to:
+    - 'off'
     trigger: state
-  - entity_id: binary_sensor.mainlightswitch_input
-    from: 'off'
-    to: 'on'
+  - entity_id:
+    - binary_sensor.mainlightswitch_input_2
+    from:
+    - 'off'
+    to:
+    - 'on'
     trigger: state
-  - domain: mqtt
-    device_id: 8ea211c32f7acb4a286c994c476bb8aa
-    type: action
-    subtype: toggle
-    discovery_id: 0xccccccfffea81914 action_toggle
-    trigger: device
-    enabled: false
   conditions: []
   actions:
   - target:
@@ -290,26 +289,26 @@
 - id: '1647293731426'
   alias: ' turn off lights'
   description: ''
-  trigger:
-  - platform: state
-    entity_id: input_boolean.lighttrigger
+  triggers:
+  - entity_id: input_boolean.lighttrigger
     from: 'on'
     to: 'off'
-  condition: []
-  action:
-  - service: scene.turn_on
-    target:
+    trigger: state
+  conditions: []
+  actions:
+  - target:
       entity_id: scene.dark
     metadata: {}
-    enabled: false
-  - service: light.turn_off
-    metadata: {}
+    enabled: true
+    action: scene.turn_on
+  - metadata: {}
     data: {}
     target:
       area_id:
       - kitchen
       - living_room
       - bedroom
+    action: light.turn_off
   mode: single
 - id: '1651933430837'
   alias: decrease light brightness
@@ -571,17 +570,6 @@
       name: 'WeeklyBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
       keep_days: 28
   mode: single
-- id: '1667128626174'
-  alias: buttons that turn on indirect light
-  description: ''
-  trigger: []
-  condition: []
-  action:
-  - service: scene.turn_on
-    target:
-      entity_id: scene.indirect_light
-    metadata: {}
-  mode: single
 - id: '1669480875120'
   alias: Turn on the light beside the PC if it is turned on
   description: ''
@@ -609,7 +597,7 @@
   use_blueprint:
     path: Nsbx/zigbee2mqtt-ikea-e1810-tradfri-remote-control.yaml
     input:
-      action_sensor: sensor.remote_control_action
+      action_sensor: sensor.styrbar_1_battery
       toggle_action:
       - data: {}
         target:
@@ -630,6 +618,8 @@
           skip_condition: true
         target:
           entity_id: automation.decrease_light_brightness
+      arrow_right_action: []
+      arrow_left_action: []
 - id: '1670088126321'
   alias: Update notifications
   description: ''
@@ -866,7 +856,7 @@
   use_blueprint:
     path: sbyx/wake-up-light-alarm-with-sunrise-effect.yaml
     input:
-      manual_time: 06:00:00
+      manual_time: 06:45:00
       light_entity: light.light_ceiling_towards_bed
       check_entity: binary_sensor.workday
       post_sunrise_actions:
@@ -896,8 +886,11 @@
           - condition: state
             entity_id: input_boolean.lighttrigger
             state: 'on'
-      min_mired: 25
+        enabled: false
+      min_mired: 0
       sunrise_duration: 15
+      start_brightness: 1
+      end_brightness: 255
 - id: '1712091874701'
   alias: 'Adaptive lighting: reset manual_control after 1 hour'
   trigger:
@@ -1082,8 +1075,83 @@
       controller_entity: sensor.remotes
       helper_last_controller_event: input_text.remote_control_blueprint_helper
       action_button_center_long:
-      - action: button.press
+      - action: input_boolean.toggle
         metadata: {}
         data: {}
         target:
-          device_id: 0c46baf80a1b6c63cc65786f55d555ce
+          entity_id: input_boolean.lighttrigger
+      action_button_up_short:
+      - action: script.increase_brightness
+        metadata: {}
+        data: {}
+      action_button_down_short:
+      - action: script.decrease_brigthness
+        metadata: {}
+        data: {}
+      action_button_center_short:
+      - action: input_boolean.toggle
+        metadata: {}
+        data: {}
+        target:
+          entity_id: input_boolean.lighttrigger
+      action_button_center_double:
+      - action: input_boolean.toggle
+        metadata: {}
+        data: {}
+        target:
+          entity_id: input_boolean.lighttrigger
+      action_button_left_short:
+      - action: scene.turn_on
+        metadata: {}
+        data: {}
+        target:
+          entity_id: scene.shade_40_2
+      action_button_right_short:
+      - action: scene.turn_on
+        metadata: {}
+        data: {}
+        target:
+          entity_id: scene.shade_40
+- id: '1760884349361'
+  alias: AI Suggestions - Daily Review
+  description: 'Performs a weekly scan of all entities to suggest new automation opportunities
+
+
+    *Disabled*: Interessting but a bit repetitive and I never acted upon it. '
+  triggers:
+  - at: 03:00:00
+    trigger: time
+  actions:
+  - data:
+      all_entities: true
+      provider_config: 01K76DGMSDWR7441XW2VVW8PWQ
+    action: ai_automation_suggester.generate_suggestions
+  - data:
+      title: Daily Automation Review
+      message: The AI Automation Suggester has completed its daily review. Check the
+        suggestions sensor for new automation ideas!
+      notification_id: daily_automation_review
+    action: persistent_notification.create
+- id: '1770332805010'
+  alias: 'Turn off heating after 20 minutes '
+  description: ''
+  triggers:
+  - trigger: climate.started_heating
+    target:
+      label_id: thermostat
+    options:
+      behavior: any
+  conditions: []
+  actions:
+  - delay:
+      hours: 0
+      minutes: 20
+      seconds: 0
+      milliseconds: 0
+  - action: number.set_value
+    metadata: {}
+    target:
+      label_id: thermostat
+    data:
+      value: '16.0'
+  mode: single

@@ -48,8 +48,9 @@ api:
   encryption:
     key: "YDXRkB0mYKdI3YczZDfQZe1f/nQhGRs68dvnaVNAslA="
 
-ota:
-  password: !secret password_ota
+ota:  
+  - platform: esphome
+    password: !secret password_ota
   
 web_server:
   port: 80
